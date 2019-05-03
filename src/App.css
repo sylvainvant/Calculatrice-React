@@ -4,13 +4,16 @@ h1 {
 }
 .result {
     height: 60px;
-    background-color: blue;
+    background-color: #B72864;
     width: 100%;
+    color: aliceblue;
   }
   
   .result p {
     font-size: 40px;
-    margin: 5px;
+    margin: 5px 15px 0 0;
+    display: flex;
+    justify-content: flex-end;
   
   }
   
@@ -30,6 +33,10 @@ h1 {
     font-size: 30px;
   }
 
-  .operator {
-    background-color: orange;
-  }
+.operator {
+  background-color: orange;
+}
+
+.egal {
+  background-color: greenyellow;
+}
