@@ -7,7 +7,10 @@ body {
 h1 {
   text-align: center;
   align-items: center;
-  color: aliceblue;
+  /*color: aliceblue;*/
+  font-size: 4rem;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.75);
+    color: whitesmoke;
 }
 
 .result {
