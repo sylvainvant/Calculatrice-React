@@ -1,7 +1,15 @@
+body {
+  background-image: url(./img/background.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
 h1 {
   text-align: center;
   align-items: center;
+  color: aliceblue;
 }
+
 .result {
     height: 60px;
     background-color: #B72864;
