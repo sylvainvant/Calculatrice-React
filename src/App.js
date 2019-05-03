@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import Result from './components/Result';
+import KeyPad from './components/KeyPad';
+
+
+// Create a Class Component App. 
+class App extends Component {
+    constructor(){
+        super();
+
+        this.state = {
+            result: ""
+        }
+    }
+
+   
+
+    render() {
+        return (
+            <div>
+                <div className="calculator-body">
+                    <h1>Calculatrice</h1>
+                    <Result result={this.state.result}/>
+                    <KeyPad />
+                </div>
+            </div>
+        );
+    }
 }
 
+
+// Export App Component. 
 export default App;
